@@ -1,0 +1,45 @@
+      <header class="ova-screen__head" data-reveal>
+        <div class="ova-screen__eyebrow">Cuaderno de aprendizaje <span data-ova-hueco="número del cuaderno"></span></div>
+        <h1 class="ova-screen__title">Evaluación <span class="up-suave">de la</span> <span class="up-destacado">unidad</span></h1>
+      </header>
+
+      <!-- Preguntas, opciones y retroalimentación: literales del banco de preguntas del Word. La letra
+           de cada opción la pone el componente; la posición de la correcta varía. La columna «Respuesta»
+           del apareamiento es clave del docente y no se muestra. Una diapositiva por pregunta. -->
+      <div class="ova-evalquiz" data-ova-evalquiz data-label-item="Pregunta" data-label-items="preguntas" data-reveal>
+        <div class="ova-evalquiz__slide is-active" data-slide="intro">
+          <div class="up-eval__cuerpo">
+            <p class="up-eval__lead" data-ova-hueco="presentación de la evaluación: cuántas preguntas y sobre qué temas"></p>
+
+            <button class="ova-evalquiz__btn ova-evalquiz__btn--primary" data-evalquiz-go="1">
+              Comenzar <iconify-icon icon="mdi:arrow-right"></iconify-icon>
+            </button>
+          </div>
+        </div>
+
+        <div class="ova-evalquiz__slide" data-slide="r1">
+          <div class="up-eval__cuerpo">
+            <div data-ova-hueco="pregunta 1 del banco: contexto, enunciado, opciones y retroalimentación literales"></div>
+          </div>
+        </div>
+
+        <div class="ova-evalquiz__slide" data-slide="cierre">
+          <div class="ova-evalquiz__section" style="text-align:left;">
+            <h2 style="margin:0 0 14px;">Evaluación completada</h2>
+            <p style="max-width:60ch;">Repasar las retroalimentaciones vale tanto como acertar: cada una explica
+              por qué una opción es la adecuada y las otras no.</p>
+            <button class="ova-evalquiz__btn" data-evalquiz-restart style="margin-top:22px;">
+              <iconify-icon icon="mdi:refresh"></iconify-icon> Volver a intentarlo
+            </button>
+          </div>
+        </div>
+
+        <div class="ova-evalquiz__nav" data-evalquiz-nav>
+          <button class="ova-evalquiz__btn ova-evalquiz__btn--prev" data-evalquiz-prev aria-label="Pregunta anterior" title="Anterior"><iconify-icon icon="mdi:arrow-left"></iconify-icon></button>
+          <div class="ova-evalquiz__progress-bar">
+            <div class="ova-evalquiz__progress-fill" data-evalquiz-progress></div>
+          </div>
+          <span class="ova-evalquiz__counter" data-evalquiz-counter></span>
+          <button class="ova-evalquiz__btn ova-evalquiz__btn--primary" data-evalquiz-next>Siguiente <iconify-icon icon="mdi:arrow-right"></iconify-icon></button>
+        </div>
+      </div>

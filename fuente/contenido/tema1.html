@@ -1,0 +1,125 @@
+      <header class="ova-screen__head" data-reveal>
+        <!-- Eyebrow: el numeral del tema; título: el del DI, «1. A dónde se va tu dinero», con el numeral en
+             el eyebrow (INSTITUCION §2). Lead: el propósito del tema, literal. -->
+        <div class="ova-screen__eyebrow">Tema {{NUM}}</div>
+        <h1 class="ova-screen__title">A dónde se va tu dinero</h1>
+        <p class="ova-screen__lead">El propósito de este primer tema es que puedas ver tu dinero con claridad antes de decidir qué hacer con él. No se puede ordenar lo que no se conoce: el primer paso de cualquier presupuesto no es recortar, sino registrar.</p>
+      </header>
+
+      <!-- Ilustración explicativa de apertura (catálogo): registrar antes que recortar (DI, apertura del tema 1).
+           EDITORIAL · el pie y el alt no vienen del DI. Guion en insumos/ILUSTRACIONES.md -->
+      <figure class="ova-ilustracion" data-reveal>
+        <img src="assets/img/curso/ilustracion-registrar.svg"
+             alt="Una hoja de registro apaisada, como una hoja de cálculo, con cabecera verde y tres columnas: el día, la descripción y el monto. Nueve renglones ya anotados, con montos pequeños a la derecha; el décimo está a medio escribir y sobre él se apoya un lápiz dorado, tendido sobre la hoja." />
+        <figcaption>Un mes de gastos anotados uno por uno.</figcaption>
+      </figure>
+
+      <p data-reveal>Piensa en Diego. Gana lo mismo cada quincena y no hizo ninguna compra grande en el último mes. Antes de seguir, formula tu hipótesis sobre por qué no le alcanza:</p>
+
+      <!-- Acordeón (catálogo) · «¿A dónde se fue el dinero de Diego?». Instrucción literal del Word. -->
+      <h3 class="ova-rotulo" data-reveal><strong>¿A dónde se fue el dinero de Diego?</strong></h3>
+      <p class="ova-llamado" data-reveal><span class="ova-llamado__mano" aria-hidden="true"><iconify-icon icon="mdi:cursor-pointer"></iconify-icon></span>Lee la pregunta y despliega la respuesta para compararla con tu hipótesis.</p>
+      <div class="ova-acordeon" data-reveal>
+        <div class="ova-acordeon__item is-open">
+          <button class="ova-acordeon__head"><span><strong>Pregunta</strong></span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner"><p>¿Gana poco, tiene demasiadas deudas, gasta en cosas grandes o gasta sin darse cuenta en cosas pequeñas?</p></div></div>
+        </div>
+        <div class="ova-acordeon__item">
+          <button class="ova-acordeon__head"><span><strong>Respuesta</strong></span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner"><p>Diego no lleva registro. Cuando anotó todo durante un mes, descubrió que <strong>cerca de $1 800 se le iban en gastos pequeños</strong> que no recordaba: cafés, envíos a domicilio y suscripciones. El problema no era cuánto ganaba, sino que nadie decidía a dónde iba ese dinero.</p></div></div>
+        </div>
+      </div>
+
+      <section class="up-seccion" id="tema1-1" data-reveal>
+        <h2 class="up-seccion__titulo">1.1 Ingresos, gastos fijos y gastos variables</h2>
+      </section>
+
+      <p data-reveal>Todo movimiento de dinero cae en una de tres categorías. El <strong>ingreso neto</strong> es lo que de verdad llega a tu cuenta, después de impuestos y deducciones; es la única cifra con la que se puede planear. Los <strong>gastos fijos</strong> se repiten cada mes por un monto parecido y son difíciles de cambiar en el corto plazo. Los <strong>gastos variables</strong> cambian de un mes a otro y dependen de tus decisiones del día a día.</p>
+
+      <!-- Tabla simple (catálogo) · Tabla 1, con su Nota y su Fuente -->
+      <figure class="ova-apa-tabla" data-reveal>
+        <figcaption>
+          <span class="ova-apa-tabla__num"><strong>Tabla 1</strong></span>
+          <span class="ova-apa-tabla__titulo">Las tres categorías de tu dinero, con ejemplos del mes de Diego</span>
+        </figcaption>
+        <div class="ova-tabla"><table>
+          <thead><tr><th>Categoría</th><th>Qué es</th><th>Ejemplos de Diego</th><th>Qué tan fácil es cambiarla</th></tr></thead>
+          <tbody>
+            <tr><td>Ingreso neto</td><td>Lo que llega a tu cuenta después de impuestos y deducciones.</td><td>Dos quincenas de $10 000.</td><td>Cambia poco en el corto plazo.</td></tr>
+            <tr><td>Gastos fijos</td><td>Pagos que se repiten cada mes por un monto parecido.</td><td>Renta de $5 500, servicios y plan del celular de $800, pagos mínimos de sus deudas.</td><td>Difícil: suelen depender de contratos.</td></tr>
+            <tr><td>Gastos variables</td><td>Gastos que cambian según tus decisiones del día a día.</td><td>Despensa, transporte, salidas, comida a domicilio, ropa.</td><td>Fácil: es donde un presupuesto tiene más efecto.</td></tr>
+          </tbody>
+        </table></div>
+        <p class="ova-apa-tabla__nota">Nota. Los gastos variables parecen pequeños uno por uno, pero juntos suelen ser la parte del mes que más se puede ajustar.</p>
+        <p class="ova-apa-tabla__fuente">Fuente: elaboración propia.</p>
+      </figure>
+
+      <!-- Bloque destacado - fondo claro (catálogo) · «Para tener en cuenta». Icono decorativo (editorial). -->
+      <div class="ova-destacados" data-reveal>
+        <div class="ova-destacado">
+          <span class="ova-destacado__icono" aria-hidden="true"><iconify-icon icon="mdi:notebook-edit-outline"></iconify-icon></span>
+          <div>
+            <h4 class="ova-destacado__titulo"><strong>Para tener en cuenta</strong></h4>
+            <p>Durante un mes, <strong>anota cada gasto el mismo día en que lo haces</strong>, aunque sea de $20. Puedes usar una libreta, una hoja de cálculo o la app de tu banco. Un mes de registro honesto vale más que cualquier presupuesto hecho de memoria.</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="up-seccion" id="tema1-2" data-reveal>
+        <h2 class="up-seccion__titulo">1.2 Los gastos hormiga</h2>
+      </section>
+
+      <p data-reveal>Se llaman <strong>gastos hormiga</strong> a los gastos pequeños y frecuentes que pasan desapercibidos: el café de camino al trabajo, la botana de la tarde, el envío a domicilio, la suscripción que olvidaste cancelar. Ninguno parece importante, pero se repiten tanto que, al sumarlos, pesan como un gasto grande.</p>
+
+      <p data-reveal>Basta hacer la cuenta para verlo.</p>
+
+      <!-- Bloque con Cifra destacada - clara (catálogo). Campos literales del Word. -->
+      <div class="ova-indicador ova-indicador--claro" data-reveal>
+        <div class="ova-indicador__cifra">
+          <p class="ova-indicador__num">$21 900</p>
+          <p class="ova-indicador__mide">es lo que suman en un año $60 diarios en gastos hormiga.</p>
+        </div>
+        <div class="ova-indicador__cuerpo">
+          <p class="ova-indicador__etiqueta">Haz la cuenta</p>
+          <p>Sesenta pesos al día parecen poco: un café y una botana. Multiplicados por los 365 días del año, son $21 900, más de lo que Diego gana en un mes. No se trata de prohibirte el café, sino de <strong>decidir si ese dinero está donde tú quieres que esté</strong>.</p>
+          <p class="ova-indicador__fuente">Fuente: elaboración propia.</p>
+        </div>
+      </div>
+
+      <p data-reveal>Los gastos hormiga más comunes se reconocen a simple vista.</p>
+
+      <!-- Tarjetas con foto (catálogo) · «Tres gastos hormiga frecuentes». Fotos Imagen-02/03/04 del DI (insumos/imagenes/).
+           Créditos del DI: Unsplash; autor y enlace pendientes (duda al cliente). EDITORIAL · los alt. -->
+      <h3 class="ova-rotulo" data-reveal><strong>Tres gastos hormiga frecuentes</strong></h3>
+      <div class="ova-mosaico" data-reveal>
+        <figure class="ova-mosaico__tarjeta">
+          <img src="assets/img/curso/figura-02-cafe-para-llevar.webp" alt="Una persona recibe un café para llevar en vaso de cartón de manos de quien atiende el local." />
+          <figcaption>
+            <h4><strong>El café de todos los días</strong></h4>
+            <p>«Un hábito de $45 que al mes suma más de $1 300».</p>
+          </figcaption>
+        </figure>
+        <figure class="ova-mosaico__tarjeta">
+          <img src="assets/img/curso/figura-03-repartidor-bicicleta.webp" alt="Un repartidor en bicicleta, con mochila de reparto a la espalda, avanza por una calle estrecha." />
+          <figcaption>
+            <h4><strong>Los envíos a domicilio</strong></h4>
+            <p>«La comodidad tiene un costo: el envío, la propina y el precio más alto».</p>
+          </figcaption>
+        </figure>
+        <figure class="ova-mosaico__tarjeta">
+          <img src="assets/img/curso/figura-04-apps-streaming.webp" alt="Una mano sostiene un celular con iconos de plataformas de streaming frente a un televisor encendido." />
+          <figcaption>
+            <h4><strong>Las suscripciones que no usas</strong></h4>
+            <p>«Se cobran solas cada mes, aunque no abras la plataforma».</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Para reflexionar (catálogo) -->
+      <div class="ova-callout ova-callout--reflexion" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:comment-question-outline"></iconify-icon></div>
+        <div>
+          <span class="ova-callout__tag">Para reflexionar</span>
+          <p style="margin:8px 0 0;">Si revisas los movimientos de tu tarjeta del último mes, ¿cuántos gastos de menos de $100 encuentras y cuánto suman?</p>
+        </div>
+      </div>

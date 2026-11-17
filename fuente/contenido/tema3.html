@@ -1,0 +1,13 @@
+      <header class="ova-screen__head" data-reveal>
+        <div class="ova-screen__eyebrow">Tema {{NUM}}</div>
+        <h1 class="ova-screen__title" data-ova-hueco="título del tema, literal del DI"></h1>
+        <p class="ova-screen__lead" data-ova-hueco="propósito del tema, literal de la tabla del DI"></p>
+      </header>
+
+      <!-- Una sección vacía y ningún componente: /ova-maquetar elige cada componente desde el DI
+           y agrega las secciones que falten, cada una con su ancla en el menú de ova.config.js -->
+      <section class="up-seccion" id="tema{{NUM}}-1" data-reveal>
+        <h2 class="up-seccion__titulo"><span data-ova-hueco="título de la sección {{NUM}}.1, literal del DI"></span></h2>
+      </section>
+
+      <div data-ova-hueco="contenido de la sección {{NUM}}.1: el componente lo elige /ova-maquetar desde el DI" data-reveal></div>

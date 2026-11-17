@@ -1,0 +1,176 @@
+      <header class="ova-screen__head" data-reveal>
+        <!-- Eyebrow: el numeral del tema; título: el del DI, «2. Armar un presupuesto», con el numeral en
+             el eyebrow (INSTITUCION §2). Lead: el párrafo de apertura del tema, literal. -->
+        <div class="ova-screen__eyebrow">Tema {{NUM}}</div>
+        <h1 class="ova-screen__title">Armar un presupuesto</h1>
+        <p class="ova-screen__lead">Un presupuesto es un plan que asigna cada peso de tu ingreso a un propósito antes de que lo gastes. Hay muchas formas de hacerlo; en este tema vas a usar una regla sencilla que sirve como punto de partida y que después puedes ajustar a tu realidad.</p>
+      </header>
+
+      <!-- Ilustración de apertura: la inserta /ova-ilustrar aquí, antes de la sección 2.1 -->
+
+      <section class="up-seccion" id="tema2-1" data-reveal>
+        <h2 class="up-seccion__titulo">2.1 La regla 50/30/20</h2>
+      </section>
+
+      <p data-reveal>La regla 50/30/20, popularizada por Elizabeth Warren y Amelia Warren Tyagi, propone repartir el ingreso neto en tres partes: la mitad para lo que necesitas, casi un tercio para lo que quieres y una quinta parte para tu futuro (Warren y Warren Tyagi, 2005).</p>
+
+      <!-- Tarjetas que giran (catálogo) · «Las tres partes de tu ingreso». Etiqueta, título e instrucción literales
+           del Word; el frente literal («50 % · Necesidades») y el 01-03 lo pone el componente (C1, 2026-11-09). -->
+      <p class="ova-etiqueta" data-reveal><iconify-icon icon="mdi:rotate-3d-variant"></iconify-icon> Regla 50/30/20</p>
+      <h3 class="ova-rotulo" data-reveal><strong>Las tres partes de tu ingreso</strong></h3>
+      <p class="ova-llamado" data-reveal><span class="ova-llamado__mano" aria-hidden="true"><iconify-icon icon="mdi:cursor-pointer"></iconify-icon></span>Gira cada tarjeta y descubre qué gastos van en cada parte.</p>
+      <div class="ova-giros" data-reveal>
+        <button type="button" class="ova-giro" aria-pressed="false">
+          <span class="ova-giro__cara ova-giro__frente">
+            <span class="ova-giro__num">01</span>
+            <span class="ova-giro__titulo">50 % · Necesidades</span>
+            <span class="ova-giro__pista"><iconify-icon icon="mdi:rotate-3d-variant"></iconify-icon> Toca para girar</span>
+          </span>
+          <span class="ova-giro__cara ova-giro__dorso">
+            <span class="ova-giro__etiqueta">Responde a</span>
+            <span class="ova-giro__pregunta">¿Qué no puedes dejar de pagar?</span>
+            <span class="ova-giro__texto">Renta o hipoteca, despensa, transporte, servicios y los pagos mínimos de tus deudas.</span>
+          </span>
+        </button>
+        <button type="button" class="ova-giro" aria-pressed="false">
+          <span class="ova-giro__cara ova-giro__frente">
+            <span class="ova-giro__num">02</span>
+            <span class="ova-giro__titulo">30 % · Deseos</span>
+            <span class="ova-giro__pista"><iconify-icon icon="mdi:rotate-3d-variant"></iconify-icon> Toca para girar</span>
+          </span>
+          <span class="ova-giro__cara ova-giro__dorso">
+            <span class="ova-giro__etiqueta">Responde a</span>
+            <span class="ova-giro__pregunta">¿Qué te da gusto, pero podrías ajustar?</span>
+            <span class="ova-giro__texto">Salidas, comida fuera de casa, ropa que no es indispensable, viajes y suscripciones.</span>
+          </span>
+        </button>
+        <button type="button" class="ova-giro" aria-pressed="false">
+          <span class="ova-giro__cara ova-giro__frente">
+            <span class="ova-giro__num">03</span>
+            <span class="ova-giro__titulo">20 % · Ahorro y deudas</span>
+            <span class="ova-giro__pista"><iconify-icon icon="mdi:rotate-3d-variant"></iconify-icon> Toca para girar</span>
+          </span>
+          <span class="ova-giro__cara ova-giro__dorso">
+            <span class="ova-giro__etiqueta">Responde a</span>
+            <span class="ova-giro__pregunta">¿Qué hace tu dinero por tu futuro?</span>
+            <span class="ova-giro__texto">El fondo de emergencia, el ahorro para tus metas y los pagos adicionales a tus deudas.</span>
+          </span>
+        </button>
+      </div>
+
+      <!-- Bloque destacado - fondo de color (catálogo) · «Importante». Icono decorativo (editorial). -->
+      <div class="ova-destacados ova-destacados--color" data-reveal>
+        <div class="ova-destacado ova-destacado--importante">
+          <span class="ova-destacado__icono" aria-hidden="true"><iconify-icon icon="mdi:alert-circle-outline"></iconify-icon></span>
+          <div>
+            <h4 class="ova-destacado__titulo"><strong>Importante</strong></h4>
+            <p>Los porcentajes son un <strong>punto de partida, no una ley</strong>. En ciudades donde la renta es alta, las necesidades pueden pasar del 50 %. Si es tu caso, no abandones la regla: ajusta los deseos antes que el ahorro, y revisa la proporción cada vez que cambie tu ingreso.</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="up-seccion" id="tema2-2" data-reveal>
+        <h2 class="up-seccion__titulo">2.2 El presupuesto de Diego, paso a paso</h2>
+      </section>
+
+      <p data-reveal>Diego decidió probar la regla con su sueldo de $20 000. Lo hizo en cuatro pasos, que te sirven para armar el tuyo.</p>
+
+      <!-- Proceso escalonado (catálogo, versión UP: peldaño 04 dorado, sin sol) · «Cómo armar tu presupuesto».
+           El «Texto junto a la escalera» va literal, partido en tspan para que no pise el peldaño 04 (C2, 2026-11-09).
+           DISEÑO: iconos de los pasos (editorial): cash-multiple · notebook-edit-outline · shape-outline · tune-variant. -->
+      <h3 class="ova-rotulo" data-reveal><strong>Cómo armar tu presupuesto</strong></h3>
+      <p data-reveal>Cada paso se apoya en el anterior: no puedes repartir lo que no has medido.</p>
+      <div class="ova-ciclo ova-ciclo--escalonado" data-reveal>
+        <svg class="ova-ciclo__escalera" viewBox="0 0 420 420" role="img"
+             aria-label="Escalera de cuatro peldaños de cuadros, del 01 al 04; el último, en dorado. Al lado: Primero mide, después decide. Un presupuesto sale de tus números, no de tus buenas intenciones.">
+          <g class="ova-ciclo__peldano"><rect class="ova-ciclo__cima" x="36" y="318" width="74" height="74"/><text x="73" y="362" text-anchor="middle" font-size="22" font-weight="800">01</text></g>
+          <g class="ova-ciclo__peldano"><rect class="ova-ciclo__pila" x="118" y="318" width="74" height="74"/><rect class="ova-ciclo__cima" x="118" y="236" width="74" height="74"/><text x="155" y="280" text-anchor="middle" font-size="22" font-weight="800">02</text></g>
+          <g class="ova-ciclo__peldano"><rect class="ova-ciclo__pila" x="200" y="318" width="74" height="74"/><rect class="ova-ciclo__pila" x="200" y="236" width="74" height="74"/><rect class="ova-ciclo__cima" x="200" y="154" width="74" height="74"/><text x="237" y="198" text-anchor="middle" font-size="22" font-weight="800">03</text></g>
+          <g class="ova-ciclo__peldano"><rect class="ova-ciclo__pila" x="282" y="318" width="74" height="74"/><rect class="ova-ciclo__pila" x="282" y="236" width="74" height="74"/><rect class="ova-ciclo__pila" x="282" y="154" width="74" height="74"/><rect class="ova-ciclo__cima" x="282" y="72" width="74" height="74"/><text x="319" y="116" text-anchor="middle" font-size="22" font-weight="800">04</text></g>
+          <text class="ova-ciclo__lema" x="36" y="56" font-size="21" font-weight="800"><tspan x="36" dy="0">Primero mide,</tspan><tspan x="36" dy="26">después decide</tspan></text>
+          <text class="ova-ciclo__lema" x="36" y="112" font-size="16" font-weight="300" opacity=".75"><tspan x="36" dy="0">Un presupuesto sale</tspan><tspan x="36" dy="21">de tus números,</tspan><tspan x="36" dy="21">no de tus buenas</tspan><tspan x="36" dy="21">intenciones.</tspan></text>
+        </svg>
+        <div class="ova-ciclo__pasos">
+          <div class="ova-ciclo__paso">
+            <div class="ova-ciclo__num">PASO 01</div>
+            <h3 class="ova-ciclo__titulo"><iconify-icon icon="mdi:cash-multiple"></iconify-icon><strong>Calcula tu ingreso neto</strong></h3>
+            <p class="ova-ciclo__desc">Suma lo que de verdad llega a tu cuenta en un mes. Diego recibe dos quincenas de $10 000: $20 000.</p>
+          </div>
+          <div class="ova-ciclo__paso">
+            <div class="ova-ciclo__num">PASO 02</div>
+            <h3 class="ova-ciclo__titulo"><iconify-icon icon="mdi:notebook-edit-outline"></iconify-icon><strong>Registra un mes de gastos</strong></h3>
+            <p class="ova-ciclo__desc">Anota cada gasto durante treinta días, sin cambiar tus hábitos todavía. Diego descubrió $1 800 en gastos hormiga.</p>
+          </div>
+          <div class="ova-ciclo__paso">
+            <div class="ova-ciclo__num">PASO 03</div>
+            <h3 class="ova-ciclo__titulo"><iconify-icon icon="mdi:shape-outline"></iconify-icon><strong>Clasifica cada gasto</strong></h3>
+            <p class="ova-ciclo__desc">Separa necesidades, deseos y ahorro. Así ves cuánto se va hoy a cada parte.</p>
+          </div>
+          <div class="ova-ciclo__paso">
+            <div class="ova-ciclo__num">PASO 04</div>
+            <h3 class="ova-ciclo__titulo"><iconify-icon icon="mdi:tune-variant"></iconify-icon><strong>Asigna y ajusta</strong></h3>
+            <p class="ova-ciclo__desc">Reparte tu ingreso con la regla 50/30/20 y ajusta las categorías que se pasan. Diego recortó deseos para llegar a su 20 % de ahorro.</p>
+          </div>
+        </div>
+      </div>
+
+      <p data-reveal>Así quedó el presupuesto mensual de Diego.</p>
+
+      <!-- Tabla simple (catálogo) · Tabla 2, con su Nota y su Fuente.
+           ERRORES-ORIGEN F1 (Bloquea = No): la fila Necesidades y la Nota van literales; la fila sigue abierta. -->
+      <figure class="ova-apa-tabla" data-reveal>
+        <figcaption>
+          <span class="ova-apa-tabla__num"><strong>Tabla 2</strong></span>
+          <span class="ova-apa-tabla__titulo">El presupuesto mensual de Diego con la regla 50/30/20</span>
+        </figcaption>
+        <div class="ova-tabla"><table>
+          <thead><tr><th>Parte</th><th>Porcentaje</th><th>Monto mensual</th><th>En qué se va</th></tr></thead>
+          <tbody>
+            <tr><td>Necesidades</td><td>50 %</td><td>$10 000</td><td>Renta $5 500, despensa $2 500, transporte $1 200, servicios y celular $800.</td></tr>
+            <tr><td>Deseos</td><td>30 %</td><td>$6 000</td><td>Salidas y comida fuera $2 500, ropa $1 500, suscripciones $500, otros $1 500.</td></tr>
+            <tr><td>Ahorro y deudas</td><td>20 %</td><td>$4 000</td><td>Fondo de emergencia $2 000 y pago adicional a la tarjeta $2 000.</td></tr>
+          </tbody>
+        </table></div>
+        <p class="ova-apa-tabla__nota">Nota. Los pagos mínimos de las deudas van en necesidades; lo que Diego paga por encima del mínimo va en ahorro y deudas.</p>
+        <p class="ova-apa-tabla__fuente">Fuente: elaboración propia.</p>
+      </figure>
+
+      <p data-reveal>El presupuesto mensual se vive por quincenas. Diego ordenó su mes así:</p>
+
+      <!-- Línea de tiempo tipo 2 (catálogo) · «El mes de Diego». Día y etapa en negrilla, como el Word. -->
+      <h3 class="ova-rotulo" data-reveal><strong>El mes de Diego</strong></h3>
+      <ol class="ova-cronograma" data-reveal>
+        <li class="ova-cronograma__hito">
+          <div class="ova-cronograma__fecha"><strong>Día 1</strong><span><strong>Primera quincena</strong></span></div>
+          <div class="ova-cronograma__cuerpo"><h3><strong>Aparta primero el ahorro</strong></h3><p>Apenas cobra, transfiere $2 000 a su cuenta de ahorro, antes de gastar nada.</p></div>
+        </li>
+        <li class="ova-cronograma__hito">
+          <div class="ova-cronograma__fecha"><strong>Día 2</strong><span><strong>Pagos fijos</strong></span></div>
+          <div class="ova-cronograma__cuerpo"><h3><strong>Paga la renta</strong></h3><p>Cubre los $5 500 de renta con lo que queda de la primera quincena.</p></div>
+        </li>
+        <li class="ova-cronograma__hito">
+          <div class="ova-cronograma__fecha"><strong>Día 10</strong><span><strong>Revisión</strong></span></div>
+          <div class="ova-cronograma__cuerpo"><h3><strong>Revisa cómo va</strong></h3><p>Compara lo gastado con lo planeado y ajusta los deseos de la semana.</p></div>
+        </li>
+        <li class="ova-cronograma__hito">
+          <div class="ova-cronograma__fecha"><strong>Día 15</strong><span><strong>Segunda quincena</strong></span></div>
+          <div class="ova-cronograma__cuerpo"><h3><strong>Paga la tarjeta</strong></h3><p>Abona $2 000 adicionales a la tarjeta de crédito, además del mínimo.</p></div>
+        </li>
+        <li class="ova-cronograma__hito">
+          <div class="ova-cronograma__fecha"><strong>Día 30</strong><span><strong>Cierre</strong></span></div>
+          <div class="ova-cronograma__cuerpo"><h3><strong>Cierra el mes</strong></h3><p>Anota lo que sobró o faltó y decide qué cambiar el mes siguiente.</p></div>
+        </li>
+      </ol>
+
+      <!-- Botón de ventana modal (catálogo) · «Volviendo al reto de la unidad». Sin «Título de la ventana:» en el
+           Word: la ventana lleva el título del botón. Texto de la ventana en cuerpo (C3, 2026-11-09). -->
+      <div class="ova-ventana" data-reveal>
+        <button class="ova-btn ova-btn--outline ova-ventana__boton" data-ova-modal-open="ventana-reto-tema2"><iconify-icon icon="mdi:card-text-outline"></iconify-icon> Volviendo al reto de la unidad</button>
+        <div class="ova-modal" id="ventana-reto-tema2"><div class="ova-modal__dialog">
+          <div class="ova-modal__head"><h3>Volviendo al reto de la unidad</h3><button class="ova-modal__close" data-ova-modal-close aria-label="Cerrar"><iconify-icon icon="mdi:close"></iconify-icon></button></div>
+          <div class="ova-modal__body">
+            <p>Con su presupuesto, Diego ya no se queda sin dinero antes de la quincena: sabe de antemano cuánto puede gastar en deseos cada quincena y aparta su ahorro el mismo día en que cobra. Le quedan dos preguntas: cuánto debe juntar para emergencias y qué deuda conviene pagar primero.</p>
+          </div>
+          <div class="ova-modal__foot"><button class="ova-btn ova-btn--outline" data-ova-modal-close>Cerrar</button></div>
+        </div></div>
+      </div>

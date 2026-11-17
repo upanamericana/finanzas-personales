@@ -1,41 +1,168 @@
       <header class="ova-screen__head" data-reveal>
-        <div class="ova-screen__eyebrow">Cuaderno de aprendizaje <span data-ova-hueco="número del cuaderno"></span></div>
+        <div class="ova-screen__eyebrow">Cuaderno de aprendizaje 1</div>
         <h1 class="ova-screen__title">Evaluación <span class="up-suave">de la</span> <span class="up-destacado">unidad</span></h1>
       </header>
 
-      <!-- Preguntas, opciones y retroalimentación: literales del banco de preguntas del Word. La letra
-           de cada opción la pone el componente; la posición de la correcta varía. La columna «Respuesta»
-           del apareamiento es clave del docente y no se muestra. Una diapositiva por pregunta. -->
-      <div class="ova-evalquiz" data-ova-evalquiz data-label-item="Pregunta" data-label-items="preguntas" data-reveal>
+      <!-- Actividades, opciones y retroalimentación: literales del banco de preguntas
+           (insumos/preguntas/Preguntas.docx; el DI no trae evaluación). Cada actividad es la pieza del catálogo con
+           su rótulo y el llamado base en «tú» (KIT-004-1; el banco no trae «Instrucción:»). El título va en
+           negrilla como en la pieza y en unidad-demo. «(correcta)», la raya de Relacionar, el «·» de Clasificar
+           y la clave 1–4 de Ordenar no se muestran. Una diapositiva por actividad, en el orden del banco.
+           Cifras con espacio de no separación (2026-11-17). -->
+      <div class="ova-evalquiz" data-ova-evalquiz data-label-item="Actividad" data-label-items="actividades" data-reveal>
         <div class="ova-evalquiz__slide is-active" data-slide="intro">
-          <div class="up-eval__cuerpo">
-            <p class="up-eval__lead" data-ova-hueco="presentación de la evaluación: cuántas preguntas y sobre qué temas"></p>
-
-            <button class="ova-evalquiz__btn ova-evalquiz__btn--primary" data-evalquiz-go="1">
-              Comenzar <iconify-icon icon="mdi:arrow-right"></iconify-icon>
-            </button>
+          <!-- Presentación de la evaluación (catálogo): «Presentación:» del banco, literal. El banco no trae
+               «Vincular Imagen-N»: va la ilustración por defecto de la plantilla-base de UP (la semilla de UP
+               todavía no la trae; decisión del arquitecto, 2026-11-17). -->
+          <div class="ova-eval-intro">
+            <div class="ova-eval-intro__tarjeta">
+              <img class="ova-eval-intro__img" src="assets/img/curso/presentacion-evaluacion.svg" alt="" />
+              <div class="ova-eval-intro__cuerpo">
+                <p class="ova-eval-intro__texto">Resuelve las siguientes actividades para comprobar lo que aprendiste en la unidad.</p>
+                <button class="ova-evalquiz__btn ova-evalquiz__btn--primary" data-evalquiz-go="1">Comenzar <iconify-icon icon="mdi:arrow-right"></iconify-icon></button>
+              </div>
+            </div>
           </div>
         </div>
 
+        <!-- Pregunta (catálogo) -->
         <div class="ova-evalquiz__slide" data-slide="r1">
           <div class="up-eval__cuerpo">
-            <div data-ova-hueco="pregunta 1 del banco: contexto, enunciado, opciones y retroalimentación literales"></div>
+            <h3 class="ova-rotulo"><strong>A dónde se fue el dinero de Diego</strong></h3>
+            <p class="ova-llamado"><span class="ova-llamado__mano" aria-hidden="true"><iconify-icon icon="mdi:cursor-pointer"></iconify-icon></span>Selecciona la opción correcta.</p>
+            <div class="ova-quiz">
+              <p class="ova-quiz__contexto">Diego gana $20&nbsp;000 al mes, no hizo compras grandes y aun así se queda sin dinero antes de que termine la quincena.</p>
+              <h3 class="ova-quiz__question">¿Cuál es el primer paso para resolver su situación?</h3>
+              <div class="ova-quiz__opts">
+                <button class="ova-quiz__opt" data-correct="false"><strong>A.</strong> Pedir un préstamo para cubrir los días que le faltan.</button>
+                <button class="ova-quiz__opt" data-correct="true"><strong>B.</strong> Registrar durante un mes cada gasto que hace, aunque sea pequeño.</button>
+                <button class="ova-quiz__opt" data-correct="false"><strong>C.</strong> Cancelar su tarjeta de crédito de inmediato.</button>
+                <button class="ova-quiz__opt" data-correct="false"><strong>D.</strong> Buscar un segundo empleo para ganar más.</button>
+              </div>
+              <div class="ova-quiz__feedback"
+                   data-correct="Así es. No se puede ordenar lo que no se conoce: al registrar sus gastos, Diego descubrió cerca de $1&nbsp;800 en gastos hormiga."
+                   data-wrong="Revisa el tema 1: el primer paso de un presupuesto no es recortar ni ganar más, sino registrar a dónde se va el dinero."></div>
+            </div>
           </div>
         </div>
 
+        <!-- Verdadero o falso (catálogo) -->
+        <div class="ova-evalquiz__slide" data-slide="r2">
+          <div class="up-eval__cuerpo">
+            <h3 class="ova-rotulo"><strong>Los gastos pequeños</strong></h3>
+            <p class="ova-llamado"><span class="ova-llamado__mano" aria-hidden="true"><iconify-icon icon="mdi:cursor-pointer"></iconify-icon></span>Selecciona si la afirmación es verdadera o falsa.</p>
+            <div class="ova-quiz">
+              <h3 class="ova-quiz__question">Los gastos de menos de $100 no influyen en el presupuesto mensual.</h3>
+              <div class="ova-quiz__opts">
+                <button class="ova-quiz__opt" data-correct="false"><strong>A.</strong> Verdadero</button>
+                <button class="ova-quiz__opt" data-correct="true"><strong>B.</strong> Falso</button>
+              </div>
+              <div class="ova-quiz__feedback"
+                   data-correct="Correcto. Son los gastos hormiga: $60 diarios suman $21&nbsp;900 al año, más de lo que Diego gana en un mes."
+                   data-wrong="No es así. Un gasto pequeño que se repite todos los días pesa tanto como uno grande: haz la cuenta de lo que suma en un año."></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Relacionar (catálogo): los conceptos a la izquierda, en el orden del banco; las definiciones, en otro orden -->
+        <div class="ova-evalquiz__slide" data-slide="r3">
+          <div class="up-eval__cuerpo">
+            <h3 class="ova-rotulo"><strong>Los conceptos de la unidad</strong></h3>
+            <p class="ova-llamado"><span class="ova-llamado__mano" aria-hidden="true"><iconify-icon icon="mdi:cursor-pointer"></iconify-icon></span>Haz clic en un elemento y después en el que le corresponde. La letra de la izquierda aparecerá en la tarjeta que unas. Para cambiar una unión, vuelve a hacer clic en uno de los dos elementos.</p>
+            <div class="ova-empar">
+              <div class="ova-empar__col">
+                <button class="ova-empar__item" data-ova-match="A">Ingreso neto</button>
+                <button class="ova-empar__item" data-ova-match="B">Gasto fijo</button>
+                <button class="ova-empar__item" data-ova-match="C">Gasto hormiga</button>
+                <button class="ova-empar__item" data-ova-match="D">CAT</button>
+              </div>
+              <div class="ova-empar__col">
+                <button class="ova-empar__item" data-ova-match="C">Un gasto pequeño y frecuente que pasa desapercibido, como el café diario.</button>
+                <button class="ova-empar__item" data-ova-match="A">Lo que de verdad llega a tu cuenta, después de impuestos y deducciones.</button>
+                <button class="ova-empar__item" data-ova-match="D">El porcentaje que reúne los intereses y las comisiones de un crédito.</button>
+                <button class="ova-empar__item" data-ova-match="B">Un pago que se repite cada mes por un monto parecido, como la renta.</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ordenar (catálogo): los pasos desordenados; data-ova-order es la clave 1–4 del banco -->
+        <div class="ova-evalquiz__slide" data-slide="r4">
+          <div class="up-eval__cuerpo">
+            <h3 class="ova-rotulo"><strong>Cómo armar tu presupuesto</strong></h3>
+            <p class="ova-llamado"><span class="ova-llamado__mano" aria-hidden="true"><iconify-icon icon="mdi:cursor-pointer"></iconify-icon></span>Ordena los elementos y después selecciona «Verificar orden».</p>
+            <ul class="ova-orden">
+              <li class="ova-orden__item" data-ova-order="3"><span class="ova-orden__num">1</span> Clasifica cada gasto: separa necesidades, deseos y ahorro.</li>
+              <li class="ova-orden__item" data-ova-order="1"><span class="ova-orden__num">2</span> Calcula tu ingreso neto: suma lo que de verdad llega a tu cuenta en un mes.</li>
+              <li class="ova-orden__item" data-ova-order="4"><span class="ova-orden__num">3</span> Asigna y ajusta: reparte tu ingreso con la regla 50/30/20 y ajusta lo que se pasa.</li>
+              <li class="ova-orden__item" data-ova-order="2"><span class="ova-orden__num">4</span> Registra un mes de gastos: anota cada gasto durante treinta días.</li>
+            </ul>
+            <button class="ova-btn ova-btn--primary" data-ova-orden-check><iconify-icon icon="mdi:check-bold"></iconify-icon> Verificar orden</button>
+          </div>
+        </div>
+
+        <!-- Clasificar (catálogo): las tres categorías del banco (en negrilla, como en el Word); los elementos
+             mezclados. Iconos decorativos (capa editorial). DISEÑO: el orden del banco va de a dos para que a 390 px
+             ocupe 5 filas (revisión del diagramador, 2026-11-17). -->
+        <div class="ova-evalquiz__slide" data-slide="r5">
+          <div class="up-eval__cuerpo">
+            <h3 class="ova-rotulo"><strong>La regla 50/30/20</strong></h3>
+            <p class="ova-llamado"><span class="ova-llamado__mano" aria-hidden="true"><iconify-icon icon="mdi:cursor-pointer"></iconify-icon></span>Lleva cada elemento a la categoría que le corresponde.</p>
+            <div class="ova-dnd">
+              <div class="ova-dnd__bank">
+                <div class="ova-dnd__bank-title">Banco</div>
+                <button type="button" class="ova-dnd__item" data-ova-correct="necesidades">Renta</button>
+                <button type="button" class="ova-dnd__item" data-ova-correct="deseos">Ropa que no es indispensable</button>
+                <button type="button" class="ova-dnd__item" data-ova-correct="necesidades">Despensa</button>
+                <button type="button" class="ova-dnd__item" data-ova-correct="deseos">Suscripciones de streaming</button>
+                <button type="button" class="ova-dnd__item" data-ova-correct="deseos">Salidas a comer</button>
+                <button type="button" class="ova-dnd__item" data-ova-correct="necesidades">Transporte al trabajo</button>
+                <button type="button" class="ova-dnd__item" data-ova-correct="ahorro-deudas">Fondo de emergencia</button>
+                <button type="button" class="ova-dnd__item" data-ova-correct="ahorro-deudas">Pago adicional a la tarjeta</button>
+              </div>
+              <div class="ova-dnd__zones">
+                <div class="ova-dnd__zone" data-ova-target="necesidades"><h4><button type="button" class="ova-dnd__target"><iconify-icon icon="mdi:home-outline" aria-hidden="true"></iconify-icon> <strong>Necesidades</strong></button></h4><div class="ova-dnd__items"></div></div>
+                <div class="ova-dnd__zone" data-ova-target="deseos"><h4><button type="button" class="ova-dnd__target"><iconify-icon icon="mdi:heart-outline" aria-hidden="true"></iconify-icon> <strong>Deseos</strong></button></h4><div class="ova-dnd__items"></div></div>
+                <div class="ova-dnd__zone" data-ova-target="ahorro-deudas"><h4><button type="button" class="ova-dnd__target"><iconify-icon icon="mdi:piggy-bank-outline" aria-hidden="true"></iconify-icon> <strong>Ahorro y deudas</strong></button></h4><div class="ova-dnd__items"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pregunta (catálogo) -->
+        <div class="ova-evalquiz__slide" data-slide="r6">
+          <div class="up-eval__cuerpo">
+            <h3 class="ova-rotulo"><strong>Qué deuda pagar primero</strong></h3>
+            <p class="ova-llamado"><span class="ova-llamado__mano" aria-hidden="true"><iconify-icon icon="mdi:cursor-pointer"></iconify-icon></span>Selecciona la opción correcta.</p>
+            <div class="ova-quiz">
+              <p class="ova-quiz__contexto">Diego debe $12&nbsp;000 en su tarjeta de crédito, con el CAT más alto, y $30&nbsp;000 de un préstamo personal. Tiene $2&nbsp;000 extra al mes para sus deudas.</p>
+              <h3 class="ova-quiz__question">Si sigue el método avalancha, ¿a dónde deben ir sus $2&nbsp;000 extra?</h3>
+              <div class="ova-quiz__opts">
+                <button class="ova-quiz__opt" data-correct="false"><strong>A.</strong> Al préstamo personal, porque es la deuda más grande.</button>
+                <button class="ova-quiz__opt" data-correct="false"><strong>B.</strong> Mitad a cada deuda, para avanzar en las dos.</button>
+                <button class="ova-quiz__opt" data-correct="true"><strong>C.</strong> A la tarjeta de crédito, porque tiene el CAT más alto.</button>
+                <button class="ova-quiz__opt" data-correct="false"><strong>D.</strong> A su ahorro, hasta terminar de pagar los mínimos.</button>
+              </div>
+              <div class="ova-quiz__feedback"
+                   data-correct="Así es. El método avalancha dirige el dinero extra a la deuda con el CAT más alto, que es la que más intereses cobra."
+                   data-wrong="Revisa el tema 3: en el método avalancha, el dinero extra va a la deuda que más cuesta, la del CAT más alto."></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cierre: título y botón de la semilla, sin la frase sobre las retroalimentaciones (tres de las seis
+             actividades no la tienen; decisión del 2026-10-25, como en unidad-demo) y sin estilos en línea. -->
         <div class="ova-evalquiz__slide" data-slide="cierre">
-          <div class="ova-evalquiz__section" style="text-align:left;">
-            <h2 style="margin:0 0 14px;">Evaluación completada</h2>
-            <p style="max-width:60ch;">Repasar las retroalimentaciones vale tanto como acertar: cada una explica
-              por qué una opción es la adecuada y las otras no.</p>
-            <button class="ova-evalquiz__btn" data-evalquiz-restart style="margin-top:22px;">
+          <div class="up-eval__cuerpo">
+            <h2>Evaluación completada</h2>
+            <button class="ova-evalquiz__btn" data-evalquiz-restart>
               <iconify-icon icon="mdi:refresh"></iconify-icon> Volver a intentarlo
             </button>
           </div>
         </div>
 
         <div class="ova-evalquiz__nav" data-evalquiz-nav>
-          <button class="ova-evalquiz__btn ova-evalquiz__btn--prev" data-evalquiz-prev aria-label="Pregunta anterior" title="Anterior"><iconify-icon icon="mdi:arrow-left"></iconify-icon></button>
+          <button class="ova-evalquiz__btn ova-evalquiz__btn--prev" data-evalquiz-prev aria-label="Actividad anterior" title="Anterior"><iconify-icon icon="mdi:arrow-left"></iconify-icon></button>
           <div class="ova-evalquiz__progress-bar">
             <div class="ova-evalquiz__progress-fill" data-evalquiz-progress></div>
           </div>

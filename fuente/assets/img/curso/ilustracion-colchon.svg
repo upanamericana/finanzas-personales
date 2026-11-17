@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img"
+     aria-label="Arriba, un bloque gris, el imprevisto, cae con una flecha hacia abajo. Lo recibe un colchón dorado de tres piezas, tendido a lo ancho. Debajo del colchón, los tres recipientes del presupuesto siguen en pie, con sus piezas verdes guardadas y ninguna fuera de su lugar.">
+  <!-- Ilustración de marca · Posgrados Panamericana · finanzas-personales · tema 3, apertura
+       Concepto (DI, apertura del tema 3): «Un presupuesto que no prevé imprevistos se rompe con el primero que llega.
+       En este tema vas a construir el colchón que protege tu presupuesto». Familia de UP (INSTITUCION.md §1.7), la de
+       ilustracion-registrar.svg e ilustracion-asignar.svg: fondo, esquinas de 4 px, sombra y ancho útil x 220–980.
+       Los tres recipientes son los de ilustracion-asignar.svg (el presupuesto del tema 2), con las mismas proporciones.
+       Único dorado: el colchón (el fondo de emergencia), en tres piezas («tres meses de gastos esenciales», Meta de 3.1).
+       v2 (2026-11-17, legibilidad a 390 px): flecha de 46 u., 30 u. entre colchón y recipientes, márgenes de 32 u. arriba y abajo.
+       Sin texto. Guion en insumos/ILUSTRACIONES.md. -->
+  <defs>
+    <linearGradient id="ilu-colchon-fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#E4EEEB"/>
+      <stop offset="55%"  stop-color="#ECF1EF"/>
+      <stop offset="100%" stop-color="#F6F8F7"/>
+    </linearGradient>
+    <filter id="ilu-colchon-sombra" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0A4039" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="420" rx="4" fill="url(#ilu-colchon-fondo)"/>
+
+  <!-- El imprevisto: un bloque pesado, en el gris de lo atenuado, que cae sobre el presupuesto -->
+  <g filter="url(#ilu-colchon-sombra)">
+    <rect x="520" y="32" width="160" height="48" rx="4" fill="#5F6663"/>
+  </g>
+  <!-- Flecha hacia abajo: trazo de 6 u. y 46 u. de largo, punta de 28×24 (como en ilustracion-asignar.svg); se detiene 20 u. antes del colchón -->
+  <g fill="#3F7D74">
+    <rect x="597" y="90" width="6" height="46"/>
+    <polygon points="586,134 614,134 600,158"/>
+  </g>
+
+  <!-- ÚNICO DORADO: el colchón, el fondo de emergencia, entre el imprevisto y el presupuesto; tres piezas iguales -->
+  <g fill="#B9975B" filter="url(#ilu-colchon-sombra)">
+    <rect x="220" y="178" width="240" height="44" rx="4"/>
+    <rect x="480" y="178" width="240" height="44" rx="4"/>
+    <rect x="740" y="178" width="240" height="44" rx="4"/>
+  </g>
+
+  <!-- El presupuesto, intacto: los tres recipientes del tema 2 (10/6/4 piezas), cada pieza en su lugar -->
+  <g filter="url(#ilu-colchon-sombra)">
+    <rect x="220" y="252" width="360" height="136" rx="4" fill="#FFFFFF"/>
+    <rect x="600" y="252" width="216" height="136" rx="4" fill="#FFFFFF"/>
+    <rect x="836" y="252" width="144" height="136" rx="4" fill="#FFFFFF"/>
+  </g>
+  <rect x="220" y="252" width="360" height="12" rx="4" fill="#0A4039"/>
+  <rect x="220" y="258" width="360" height="6" fill="#0A4039"/>
+  <rect x="236" y="274" width="162" height="14" rx="2" fill="#CFE0DC"/>
+  <rect x="230" y="302" width="340" height="70" rx="4" fill="#ECF1EF"/>
+  <rect x="236.0" y="312" width="29.2" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="269.2" y="312" width="29.2" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="302.4" y="312" width="29.2" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="335.6" y="312" width="29.2" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="368.8" y="312" width="29.2" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="402.0" y="312" width="29.2" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="435.2" y="312" width="29.2" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="468.4" y="312" width="29.2" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="501.6" y="312" width="29.2" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="534.8" y="312" width="29.2" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="600" y="252" width="216" height="12" rx="4" fill="#0A4039"/>
+  <rect x="600" y="258" width="216" height="6" fill="#0A4039"/>
+  <rect x="616" y="274" width="97" height="14" rx="2" fill="#CFE0DC"/>
+  <rect x="610" y="302" width="196" height="70" rx="4" fill="#ECF1EF"/>
+  <rect x="616.0" y="312" width="27.3" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="647.3" y="312" width="27.3" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="678.7" y="312" width="27.3" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="710.0" y="312" width="27.3" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="741.3" y="312" width="27.3" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="772.7" y="312" width="27.3" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="836" y="252" width="144" height="12" rx="4" fill="#0A4039"/>
+  <rect x="836" y="258" width="144" height="6" fill="#0A4039"/>
+  <rect x="852" y="274" width="64" height="14" rx="2" fill="#CFE0DC"/>
+  <rect x="846" y="302" width="124" height="70" rx="4" fill="#ECF1EF"/>
+  <rect x="852.0" y="312" width="25.0" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="881.0" y="312" width="25.0" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="910.0" y="312" width="25.0" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="939.0" y="312" width="25.0" height="50" rx="2" fill="#0F5C51"/>
+</svg>

@@ -45,7 +45,7 @@ module.exports = {
   /* MENÚ · la estructura RED (la misma de Scala Learning):
        - `tipo: 'especial'`  → secciones estructurales que tiene toda unidad
                                (inicio, contenido, introducción, conclusión,
-                               evaluación, glosario, referencias). Icono, no número.
+                               evaluación, glosario, referencias, créditos). Icono, no número.
        - `tipo: 'tema'`      → contenido temático, numerado 1, 2, 3…
      Las `secciones` con `ancla` aparecen en el menú como sub-ítems y bajan a la
      `.up-seccion` con ese `id` (único en todo el curso). */
@@ -75,6 +75,9 @@ module.exports = {
     { id: 'evaluacion',   titulo: 'Evaluación',            tipo: 'especial', icon: 'mdi:clipboard-check-outline' },
     // { id: 'glosario',     titulo: 'Glosario',                tipo: 'especial', icon: 'mdi:book-open-variant-outline' },
     { id: 'referencias',  titulo: 'Referencias',             tipo: 'especial', icon: 'mdi:bookmark-outline' },
+    /* Créditos: pantalla propia después de Referencias (KIT-018), con la sección «Créditos» del Word;
+       agregada por orden del arquitecto el 2026-11-16. */
+    { id: 'creditos',     titulo: 'Créditos',                tipo: 'especial', icon: 'mdi:account-group-outline' },
   ],
 
   /* REFERENCIAS · APA literal del DI §Referencias. Estilo de la línea: autor y año sin

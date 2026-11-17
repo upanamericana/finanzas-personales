@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img"
+     aria-label="Una franja dorada, el ingreso del mes, ya partida en piezas iguales y en tres tramos: uno de la mitad, otro de casi un tercio y otro de una quinta parte. De cada tramo baja una flecha a un recipiente blanco del mismo ancho, donde esas piezas quedan guardadas, todas con un lugar asignado y ninguna gastada todavía.">
+  <!-- Ilustración de marca · Posgrados Panamericana · finanzas-personales · tema 2, apertura
+       Concepto (DI, apertura del tema 2): «Un presupuesto es un plan que asigna cada peso de tu ingreso a un propósito
+       antes de que lo gastes». Familia de UP (INSTITUCION.md §1.7), misma hoja que ilustracion-registrar.svg: fondo,
+       esquinas de 4 px, sombra y ancho útil x 220–980. Los tramos siguen la proporción 50/30/20 de 2.1.
+       Único dorado: el ingreso entero, en piezas separadas (cada peso). v2 (2026-11-17): piezas separadas y flechas más gruesas, por legibilidad a 390 px. Sin texto. Guion en insumos/ILUSTRACIONES.md. -->
+  <defs>
+    <linearGradient id="ilu-asignar-fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#E4EEEB"/>
+      <stop offset="55%"  stop-color="#ECF1EF"/>
+      <stop offset="100%" stop-color="#F6F8F7"/>
+    </linearGradient>
+    <filter id="ilu-asignar-sombra" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0A4039" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="420" rx="4" fill="url(#ilu-asignar-fondo)"/>
+
+  <!-- ÚNICO DORADO: el ingreso del mes, en 20 piezas iguales y separadas (cada peso), en tres tramos 50/30/20.
+       Hueco de 5 u. entre piezas (como las verdes de abajo) y de 20 u. entre tramos -->
+  <g fill="#B9975B" filter="url(#ilu-asignar-sombra)">
+    <rect x="220.0" y="60" width="31.5" height="52" rx="2"/>
+    <rect x="256.5" y="60" width="31.5" height="52" rx="2"/>
+    <rect x="293.0" y="60" width="31.5" height="52" rx="2"/>
+    <rect x="329.5" y="60" width="31.5" height="52" rx="2"/>
+    <rect x="366.0" y="60" width="31.5" height="52" rx="2"/>
+    <rect x="402.5" y="60" width="31.5" height="52" rx="2"/>
+    <rect x="439.0" y="60" width="31.5" height="52" rx="2"/>
+    <rect x="475.5" y="60" width="31.5" height="52" rx="2"/>
+    <rect x="512.0" y="60" width="31.5" height="52" rx="2"/>
+    <rect x="548.5" y="60" width="31.5" height="52" rx="2"/>
+    <rect x="600.0" y="60" width="31.8" height="52" rx="2"/>
+    <rect x="636.8" y="60" width="31.8" height="52" rx="2"/>
+    <rect x="673.7" y="60" width="31.8" height="52" rx="2"/>
+    <rect x="710.5" y="60" width="31.8" height="52" rx="2"/>
+    <rect x="747.3" y="60" width="31.8" height="52" rx="2"/>
+    <rect x="784.2" y="60" width="31.8" height="52" rx="2"/>
+    <rect x="836.0" y="60" width="32.2" height="52" rx="2"/>
+    <rect x="873.2" y="60" width="32.2" height="52" rx="2"/>
+    <rect x="910.5" y="60" width="32.2" height="52" rx="2"/>
+    <rect x="947.8" y="60" width="32.2" height="52" rx="2"/>
+  </g>
+
+  <!-- Cada tramo baja a su propósito: trazo de 6 u. y punta de 28×24; la línea baja, la punta apunta hacia abajo y se detiene 22 u. antes del recipiente -->
+  <g fill="#3F7D74">
+    <rect x="397" y="122" width="6" height="46"/>
+    <polygon points="386,166 414,166 400,190"/>
+    <rect x="705" y="122" width="6" height="46"/>
+    <polygon points="694,166 722,166 708,190"/>
+    <rect x="905" y="122" width="6" height="46"/>
+    <polygon points="894,166 922,166 908,190"/>
+  </g>
+
+  <!-- Los tres recipientes (los propósitos), del mismo ancho que su tramo -->
+  <g filter="url(#ilu-asignar-sombra)">
+    <rect x="220" y="212" width="360" height="160" rx="4" fill="#FFFFFF"/>
+    <rect x="600" y="212" width="216" height="160" rx="4" fill="#FFFFFF"/>
+    <rect x="836" y="212" width="144" height="160" rx="4" fill="#FFFFFF"/>
+  </g>
+  <!-- la etiqueta de cada propósito, como barra; y las piezas ya guardadas, en verde, ninguna gastada -->
+  <rect x="220" y="212" width="360" height="12" rx="4" fill="#0A4039"/>
+  <rect x="220" y="218" width="360" height="6" fill="#0A4039"/>
+  <rect x="236" y="244" width="162" height="14" rx="2" fill="#CFE0DC"/>
+  <rect x="230" y="282" width="340" height="70" rx="4" fill="#ECF1EF"/>
+  <rect x="236.0" y="292" width="29.2" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="269.2" y="292" width="29.2" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="302.4" y="292" width="29.2" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="335.6" y="292" width="29.2" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="368.8" y="292" width="29.2" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="402.0" y="292" width="29.2" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="435.2" y="292" width="29.2" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="468.4" y="292" width="29.2" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="501.6" y="292" width="29.2" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="534.8" y="292" width="29.2" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="600" y="212" width="216" height="12" rx="4" fill="#0A4039"/>
+  <rect x="600" y="218" width="216" height="6" fill="#0A4039"/>
+  <rect x="616" y="244" width="97" height="14" rx="2" fill="#CFE0DC"/>
+  <rect x="610" y="282" width="196" height="70" rx="4" fill="#ECF1EF"/>
+  <rect x="616.0" y="292" width="27.3" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="647.3" y="292" width="27.3" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="678.7" y="292" width="27.3" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="710.0" y="292" width="27.3" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="741.3" y="292" width="27.3" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="772.7" y="292" width="27.3" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="836" y="212" width="144" height="12" rx="4" fill="#0A4039"/>
+  <rect x="836" y="218" width="144" height="6" fill="#0A4039"/>
+  <rect x="852" y="244" width="64" height="14" rx="2" fill="#CFE0DC"/>
+  <rect x="846" y="282" width="124" height="70" rx="4" fill="#ECF1EF"/>
+  <rect x="852.0" y="292" width="25.0" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="881.0" y="292" width="25.0" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="910.0" y="292" width="25.0" height="50" rx="2" fill="#0F5C51"/>
+  <rect x="939.0" y="292" width="25.0" height="50" rx="2" fill="#0F5C51"/>
+</svg>

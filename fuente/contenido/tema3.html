@@ -1,13 +1,152 @@
+      <!-- Tema 3 · Ahorro y deuda. Título literal del DI; el numeral va en el eyebrow (INSTITUCION §2).
+           Lead: el párrafo de apertura del tema, literal. Cifras con espacio de no separación (2026-11-17). -->
       <header class="ova-screen__head" data-reveal>
         <div class="ova-screen__eyebrow">Tema {{NUM}}</div>
-        <h1 class="ova-screen__title" data-ova-hueco="título del tema, literal del DI"></h1>
-        <p class="ova-screen__lead" data-ova-hueco="propósito del tema, literal de la tabla del DI"></p>
+        <h1 class="ova-screen__title">Ahorro y deuda</h1>
+        <p class="ova-screen__lead">Un presupuesto que no prevé imprevistos se rompe con el primero que llega. En este tema vas a construir el colchón que protege tu presupuesto y a decidir cómo salir de las deudas sin pagar de más.</p>
       </header>
 
-      <!-- Una sección vacía y ningún componente: /ova-maquetar elige cada componente desde el DI
-           y agrega las secciones que falten, cada una con su ancla en el menú de ova.config.js -->
-      <section class="up-seccion" id="tema{{NUM}}-1" data-reveal>
-        <h2 class="up-seccion__titulo"><span data-ova-hueco="título de la sección {{NUM}}.1, literal del DI"></span></h2>
+      <!-- Ilustración de apertura (ilustrador, aprobada 2026-11-17): «Un presupuesto que no prevé imprevistos se rompe con el
+           primero que llega. En este tema vas a construir el colchón que protege tu presupuesto». Pie y alt: capa
+           editorial. Guion en ILUSTRACIONES.md. -->
+      <figure class="ova-ilustracion" data-reveal>
+        <img src="assets/img/curso/ilustracion-colchon.svg"
+             alt="Arriba, un bloque gris, el imprevisto, cae con una flecha hacia abajo. Lo recibe un colchón dorado de tres piezas, tendido a lo ancho. Debajo del colchón, los tres recipientes del presupuesto siguen en pie, con sus piezas verdes guardadas y ninguna fuera de su lugar." />
+        <figcaption>El colchón recibe el imprevisto y el presupuesto queda en pie.</figcaption>
+      </figure>
+
+      <section class="up-seccion" id="tema3-1" data-reveal>
+        <h2 class="up-seccion__titulo">3.1 El fondo de emergencia</h2>
       </section>
 
-      <div data-ova-hueco="contenido de la sección {{NUM}}.1: el componente lo elige /ova-maquetar desde el DI" data-reveal></div>
+      <p data-reveal>Un <strong>fondo de emergencia</strong> es dinero apartado solo para imprevistos: una reparación, un gasto médico, unos meses sin empleo. La recomendación habitual en educación financiera es juntar <strong>entre tres y seis meses de tus gastos esenciales</strong>. Para Diego, cuyas necesidades suman $10&nbsp;000 al mes, la primera meta son $30&nbsp;000.</p>
+
+      <!-- Ruta de inicio a meta (catálogo) · «La ruta de Diego hacia su fondo de emergencia». «Inicio:», «Paso N:» y
+           «Meta:» son campos del Word: el número y las estrellas los pone el componente. Filas de 3 / 2 / 1. -->
+      <h3 class="ova-rotulo" data-reveal><strong>La ruta de Diego hacia su fondo de emergencia</strong></h3>
+      <div class="ova-trayecto" data-reveal>
+        <ol class="ova-trayecto__fila">
+          <li class="ova-trayecto__parada ova-trayecto__parada--inicio"><span class="ova-trayecto__marca" aria-hidden="true"></span><span class="ova-trayecto__texto">Cuenta de ahorro en cero</span></li>
+          <li class="ova-trayecto__parada"><span class="ova-trayecto__marca">1</span><span class="ova-trayecto__texto">Abre una cuenta separada de la de tus gastos</span></li>
+          <li class="ova-trayecto__parada"><span class="ova-trayecto__marca">2</span><span class="ova-trayecto__texto">Programa una transferencia de $2&nbsp;000 cada mes, el día que cobras</span></li>
+        </ol>
+        <ol class="ova-trayecto__fila">
+          <li class="ova-trayecto__parada"><span class="ova-trayecto__marca">3</span><span class="ova-trayecto__texto">Llega a $10&nbsp;000: un mes de gastos esenciales cubierto</span></li>
+          <li class="ova-trayecto__parada"><span class="ova-trayecto__marca">4</span><span class="ova-trayecto__texto">Destina ahí cualquier ingreso extra, como el aguinaldo</span></li>
+        </ol>
+        <ol class="ova-trayecto__fila">
+          <li class="ova-trayecto__parada ova-trayecto__parada--meta"><span class="ova-trayecto__marca" aria-hidden="true"></span><span class="ova-trayecto__texto">$30&nbsp;000: tres meses de gastos esenciales</span></li>
+        </ol>
+      </div>
+
+      <!-- Bloque destacado - fondo claro (catálogo) · «Para tener en cuenta», como en tema1. Icono decorativo (editorial). -->
+      <div class="ova-destacados" data-reveal>
+        <div class="ova-destacado">
+          <span class="ova-destacado__icono" aria-hidden="true"><iconify-icon icon="mdi:lifebuoy"></iconify-icon></span>
+          <div>
+            <h4 class="ova-destacado__titulo"><strong>Para tener en cuenta</strong></h4>
+            <p>El fondo de emergencia debe estar <strong>disponible el mismo día en que lo necesitas</strong>. Guárdalo en una cuenta de ahorro o en un instrumento de bajo riesgo que puedas retirar sin penalización, nunca en una inversión que pueda perder valor justo cuando la emergencia llegue.</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="up-seccion" id="tema3-2" data-reveal>
+        <h2 class="up-seccion__titulo">3.2 El costo real de un crédito y en qué orden pagar</h2>
+      </section>
+
+      <p data-reveal>La tasa de interés no cuenta toda la historia de un crédito. En México, el <strong>Costo Anual Total (CAT)</strong> reúne en un solo porcentaje los intereses y las comisiones, y las instituciones deben informarlo para que puedas comparar ofertas (Banco de México, s. f.). Entre dos créditos, el que tiene el CAT más alto es el que más te cuesta.</p>
+
+      <!-- DISEÑO: puente que presenta la pieza siguiente (.up-puente, revisión del diagramador, 2026-11-17). -->
+      <p class="up-puente" data-reveal>Cuando tienes más de una deuda, hay dos maneras conocidas de decidir cuál pagar primero.</p>
+
+      <!-- Comparativo (catálogo), neutro: los dos métodos son válidos (INSTITUCION §3.1). Etiquetas en negrilla, como en el Word. -->
+      <h3 class="ova-rotulo" data-reveal><strong>Dos métodos para pagar tus deudas</strong></h3>
+      <div class="ova-vs" data-reveal>
+        <div class="ova-vs__card">
+          <span class="ova-vs__card-tag"><strong>Método avalancha</strong></span>
+          <p>Pagas el mínimo de todas tus deudas y todo el dinero extra va a la que tiene el <strong>CAT más alto</strong>. Es el método que menos intereses te cobra en total.</p>
+        </div>
+        <div class="ova-vs__divider">VS</div>
+        <div class="ova-vs__card ova-vs__card--alt">
+          <span class="ova-vs__card-tag"><strong>Método bola de nieve</strong></span>
+          <p>Pagas el mínimo de todas y el dinero extra va a la deuda con el <strong>saldo más pequeño</strong>. Liquidas una deuda antes, y esa victoria temprana te ayuda a no abandonar el plan.</p>
+        </div>
+      </div>
+
+      <p data-reveal>En el caso de Diego, los dos métodos coinciden: su tarjeta tiene el saldo más pequeño y también el CAT más alto. Por eso sus $2&nbsp;000 adicionales van a la tarjeta.</p>
+
+      <!-- Bloque destacado - fondo de color (catálogo) · «Error frecuente». Icono del ejemplo del catálogo. -->
+      <div class="ova-destacados ova-destacados--color" data-reveal>
+        <div class="ova-destacado ova-destacado--error">
+          <span class="ova-destacado__icono" aria-hidden="true"><iconify-icon icon="mdi:close-circle-outline"></iconify-icon></span>
+          <div>
+            <h4 class="ova-destacado__titulo"><strong>Error frecuente</strong></h4>
+            <p>Pagar solo el mínimo de la tarjeta de crédito. El mínimo cubre sobre todo intereses, así que <strong>el saldo casi no baja</strong> y la deuda puede durar años. Siempre que puedas, paga más del mínimo, y si puedes, el total.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Banner · fondo oscuro (catálogo). Una frase, la negrilla del Word en <strong>. -->
+      <div class="ova-banner" data-reveal>
+        <p class="ova-banner__frase">Ahorrar y pagar deudas no compiten: <strong>el fondo de emergencia es lo que evita que vuelvas a endeudarte</strong>.</p>
+      </div>
+
+      <!-- DISEÑO: puente que presenta la pieza siguiente (.up-puente). -->
+      <p class="up-puente" data-reveal>Antes de cerrar la unidad, revisa si tu presupuesto tiene lo esencial.</p>
+
+      <!-- Lista de verificación (catálogo) · «Tu presupuesto está listo cuando». Llamado: la Instrucción literal del Word
+           (KIT-004). El □ del Word lo pone ova-checklist__box. Marcado del ejemplo del catálogo. -->
+      <p class="ova-llamado" data-reveal><span class="ova-llamado__mano" aria-hidden="true"><iconify-icon icon="mdi:cursor-pointer"></iconify-icon></span>Marca cada punto cuando lo hayas resuelto en tu propio presupuesto.</p>
+      <div class="ova-checklist" data-reveal>
+        <div class="ova-checklist__head"><h3 style="margin:0; font-size:1.1rem;"><strong>Tu presupuesto está listo cuando</strong></h3><div class="ova-checklist__count"><strong>0</strong> / 6</div></div>
+        <ul class="ova-checklist__list">
+          <li class="ova-checklist__item"><span class="ova-checklist__box"><iconify-icon icon="mdi:check"></iconify-icon></span><span class="ova-checklist__text">Conoces tu ingreso neto mensual.</span></li>
+          <li class="ova-checklist__item"><span class="ova-checklist__box"><iconify-icon icon="mdi:check"></iconify-icon></span><span class="ova-checklist__text">Registraste al menos un mes de gastos reales.</span></li>
+          <li class="ova-checklist__item"><span class="ova-checklist__box"><iconify-icon icon="mdi:check"></iconify-icon></span><span class="ova-checklist__text">Cada gasto está clasificado como necesidad, deseo o ahorro.</span></li>
+          <li class="ova-checklist__item"><span class="ova-checklist__box"><iconify-icon icon="mdi:check"></iconify-icon></span><span class="ova-checklist__text">Apartas el ahorro el mismo día en que cobras.</span></li>
+          <li class="ova-checklist__item"><span class="ova-checklist__box"><iconify-icon icon="mdi:check"></iconify-icon></span><span class="ova-checklist__text">Tienes una meta de fondo de emergencia y un plazo para alcanzarla.</span></li>
+          <li class="ova-checklist__item"><span class="ova-checklist__box"><iconify-icon icon="mdi:check"></iconify-icon></span><span class="ova-checklist__text">Sabes qué deuda pagar primero y por qué.</span></li>
+        </ul>
+      </div>
+
+      <!-- DISEÑO: puente que presenta la pieza siguiente (.up-puente). -->
+      <p class="up-puente" data-reveal>Para armar tu propio presupuesto, descarga la plantilla de la unidad.</p>
+
+      <!-- Descarga - con icono · fondo claro (catálogo) · Vincular PDF1, como en unidad-demo. Llamado: la Instrucción
+           literal. Icono, aria-label y nombre del archivo en assets: capa editorial. -->
+      <p class="ova-llamado" data-reveal><span class="ova-llamado__mano" aria-hidden="true"><iconify-icon icon="mdi:cursor-pointer"></iconify-icon></span>Descarga la plantilla y llénala con tus números de este mes.</p>
+      <div class="ova-destacados" data-reveal>
+        <div class="ova-destacado ova-destacado--boton">
+          <span class="ova-destacado__icono" aria-hidden="true"><iconify-icon icon="mdi:file-pdf-box"></iconify-icon></span>
+          <div>
+            <h4 class="ova-destacado__titulo"><strong>Plantilla de presupuesto mensual 50/30/20</strong></h4>
+            <p>Tu ingreso, tus tres partes y tu ruta al fondo de emergencia en una sola hoja (PDF, 1 página)</p>
+          </div>
+          <a class="ova-btn ova-btn--primary ova-destacado__boton" href="assets/descargas/plantilla-presupuesto-50-30-20.pdf" target="_blank" rel="noopener" download aria-label="Descargar Plantilla de presupuesto mensual 50/30/20 en PDF"><iconify-icon icon="mdi:download"></iconify-icon> Descargar</a>
+        </div>
+      </div>
+
+      <!-- DISEÑO: puente que presenta la pieza siguiente (.up-puente). -->
+      <p class="up-puente" data-reveal>Para cerrar, escucha el resumen de la unidad.</p>
+
+      <!-- Pódcast · portada por defecto (catálogo) · Vincular audio Podcast.mp3, como la conclusión de unidad-demo.
+           Al final del último tema (INSTITUCION §3; el Word no trae Conclusión, decisión del arquitecto 2026-11-17).
+           «Con», el eyebrow «Pódcast» y «Leer transcripción del pódcast» los pone la pieza. -->
+      <section class="ova-episodio" data-reveal>
+        <div class="ova-episodio__cabecera">
+          <div class="ova-episodio__portada"><iconify-icon icon="mdi:microphone-outline" aria-hidden="true"></iconify-icon></div>
+          <div><span class="ova-episodio__eyebrow">Pódcast</span><h3 class="ova-episodio__titulo">Finanzas personales: del sueldo al presupuesto</h3><p class="ova-episodio__conductor">Con Leo, asistente virtual de Scala Learning · 1 min 36 s</p></div>
+        </div>
+        <p class="ova-llamado"><span class="ova-llamado__mano" aria-hidden="true"><iconify-icon icon="mdi:cursor-pointer"></iconify-icon></span>Haz clic en el botón de reproducir para escuchar el audio.</p>
+        <audio data-ova-plyr preload="metadata"><source src="assets/audio/podcast-finanzas-personales.mp3" type="audio/mpeg"></audio>
+        <details class="ova-episodio__transcripcion"><summary>Leer transcripción del pódcast</summary><div class="ova-episodio__texto">
+            <p><strong>Leo:</strong> ¿Te ha pasado que cobras la quincena y, a los pocos días, ya no sabes a dónde se fue el dinero? No te pasa solo a ti. Y casi nunca es por una compra grande.</p>
+            <p>Te damos la bienvenida al Pódcast de Posgrados Panamericana.</p>
+            <p>Soy Leo, el asistente virtual de Scala Learning. En dos minutos, vas a conocer tres ideas para pasar del sueldo al presupuesto.</p>
+            <p>Primera idea: lo que no se registra, no se controla. Anota tus gastos durante un mes. Sesenta pesos al día en cafés y botanas suman casi veintidós mil pesos al año.</p>
+            <p>Segunda idea: dale un trabajo a cada peso. La regla cincuenta, treinta, veinte es un buen punto de partida: la mitad para lo que necesitas, treinta por ciento para lo que quieres y veinte por ciento para tu futuro. Y aparta el ahorro el mismo día en que cobras.</p>
+            <p>Tercera idea: protege tu presupuesto. Junta un fondo de emergencia de tres a seis meses de gastos esenciales, y paga tus deudas con un plan: primero la del costo anual total más alto, o la más pequeña, si necesitas una victoria rápida.</p>
+            <p>Recapitulemos: registra, reparte y protege. Tu reto: revisa los movimientos de tu tarjeta del último mes y encuentra tus tres gastos hormiga más caros.</p>
+            <p>Esto fue el Pódcast de Posgrados Panamericana. ¡Gracias por escucharnos!</p>
+        </div></details>
+      </section>

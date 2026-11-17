@@ -24,7 +24,7 @@ module.exports = {
   },
 
   course: {
-    code:             '',
+    code:             'SEMANA 1',   // KIT-015: etiqueta del menú y de la barra compacta, como la plantilla-base (decisión del arquitecto, 2026-11-17); encabezados y créditos siguen con «Cuaderno de aprendizaje 1»
     name:             'Finanzas personales: del sueldo al presupuesto',
     subtitle:         'Educación financiera para profesionales',
     duration:         '',
